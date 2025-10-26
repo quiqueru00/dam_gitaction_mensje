@@ -21,7 +21,7 @@ jobs:
     # Un paso para ejecutar un script de prueba
     - name: Mostrar frase
       run: |
-        echo "Preparqado para ejecurtar los tests..."
+        echo "Preparado para ejecutar los tests..."
     - name: Mostrar información del sistema
       run: |
         echo "Fecha y hora:"
