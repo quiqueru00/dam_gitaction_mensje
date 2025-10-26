@@ -1,0 +1,25 @@
+# El nombre del flujo de trabajo
+name: Git Action de prueba. Muestra un mensaje al hacer un push
+
+# El evento que lo activa (un push a la rama main)
+on:
+  push:
+    branches: [ main ]
+
+# Los trabajos que se ejecutarán
+jobs:
+  # El nombre del trabajo
+  build:
+    # El sistema operativo donde se ejecutará
+    runs-on: ubuntu-latest
+
+    # Los pasos a seguir
+    steps:
+    # Un paso para obtener el código del repositorio
+    - uses: actions/checkout@v4
+    
+    # Un paso para ejecutar un script de prueba
+    - name: Run tests
+      run: |
+        echo "Running tests..."
+        # Aquí irían tus comandos de prueba
