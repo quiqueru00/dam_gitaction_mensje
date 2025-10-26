@@ -19,7 +19,6 @@ jobs:
     - uses: actions/checkout@v4
     
     # Un paso para ejecutar un script de prueba
-    - name: Run tests
+    - name: Mostrar frase
       run: |
-        echo "Running tests..."
-        # Aquí irían tus comandos de prueba
+        echo "Preparqado para ejecurtar los tests..."       
